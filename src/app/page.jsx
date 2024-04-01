@@ -6,7 +6,8 @@ export default function Page() {
     <>
       <div className="main-card">
         <div>
-          <h1 className="text-3xl font-black text-slate-900">About</h1>
+        <h1 className="text-3xl font-black text-slate-900">About</h1>
+      <div className="h-1 bg-blue-500 flex-grow w-3/4 mb-10"></div>
           <p className="text-slate-900 mt-2 mb-5">
             As a graduating student passionate about technology, I am eager to
             leverage my skills and enthusiasm to collaborate with
@@ -22,33 +23,33 @@ export default function Page() {
             <div className="flex flex-row">
                 <WorkIcon
                   className="text-3xl"
-                  style={{ fontSize: "32px", stroke: "black" }}
+                  style={{ fontSize: "32px", stroke: "black", strokeWidth: "2px"}}
                 />
-                <h3 className=" mx-3 text-2xl font-extrabolded text-slate-900">
+                <h3 className=" mx-3 text-2xl font-black text-slate-900">
                   Experience
                 </h3>
               </div>
 
-              <div className="card flex flex-col mt-3 rounded-lg bg-gray-100 px-2 py-2"> 
-                <span className="mx-5 text-xl font-extrabolded text-slate-900">
+              <div className="card flex flex-col mt-3 rounded-lg bg-white px-4 py-4"> 
+                <span className="mx-5 text-xl font-black text-slate-900">
                 Whatfix
                 </span>
-                <span className="mx-5 text-xl text-slate-900">
+                <span className="mx-5 text-l font-black text-slate-900">
                 [Sep 2024 - present]
                 </span>
-                <span className="mx-5 text-xl text-slate-900">
+                <span className="mx-5 text-l text-slate-900">
                 During my internship at Whatfix, a leading SaaS company specializing in Digital Adoption Platforms, I delved into understanding how extensions work, explored API structures, learned about script injections, and delved into analytics. This experience provided me with a comprehensive understanding of the inner workings of a SaaS company, including its technology stack and operational processes.
                 </span>
               </div>
 
-              <div className="card flex flex-col mt-3 rounded-lg bg-gray-100 px-2 py-2"> 
-                <span className="mx-5 text-xl text-slate-900">
+              <div className="card flex flex-col mt-3 rounded-lg bg-white px-4 py-4"> 
+                <span className="mx-5 text-xl font-black text-slate-900">
                 Farmicon
                 </span>
-                <span className="mx-5 text-xl text-slate-900">
+                <span className="mx-5 text-l font-black text-slate-900">
                 [Sep 2022 - Nov 2022]
                 </span>
-                <span className="mx-5 text-xl text-slate-900">
+                <span className="mx-5 text-l text-slate-900">
                 Developed a dynamic website fetching real-time commodity prices from local mandis
 across India, integrating weather forecasts and info about various agricultural schemes
 It enhanced my web development skills via collaborating with farmers to create a
@@ -103,7 +104,7 @@ user-friendly platform empowering their agricultural endeavors.
       <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
         <a
           href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-zinc-50 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -120,7 +121,7 @@ user-friendly platform empowering their agricultural endeavors.
 
         <a
           href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-zinc-50 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -137,7 +138,7 @@ user-friendly platform empowering their agricultural endeavors.
 
         <a
           href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-zinc-50 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -154,7 +155,7 @@ user-friendly platform empowering their agricultural endeavors.
 
         <a
           href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
+          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-zinc-50 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
           target="_blank"
           rel="noopener noreferrer"
         >

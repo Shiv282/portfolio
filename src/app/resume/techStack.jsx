@@ -101,6 +101,9 @@ const TechStackLogos = () => {
             width: '100px', 
             height: '100px', 
             objectFit: 'contain',
+            backgroundColor: 'white',
+            borderRadius: '50%',
+            padding: "5px"
           }}
         />
         <img
@@ -119,6 +122,9 @@ const TechStackLogos = () => {
             width: '100px', 
             height: '100px', 
             objectFit: 'contain',
+            backgroundColor: 'white',
+            borderRadius: '50%',
+            padding: "5px"
           }}
         />
         </div>

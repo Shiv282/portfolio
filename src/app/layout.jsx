@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
         <div id="main" className="bg-white">
         <div className="relative isolate px-6 pt-14 lg:px-8">
       <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-        <div className="relative" style={{ left: 'calc(50% - 11rem)', aspectRatio: '1155/678', width: '36.125rem', transform: 'translateX(-50%)', backgroundImage: 'linear-gradient(to top right, #ff80b5, #9089fc)', opacity: '0.3', left: 'calc(50% - 30rem)', width: '72.1875rem' }}>
+        <div className="relative" style={{ left: 'calc(50% - 11rem)', aspectRatio: '1155/678', width: '36.125rem', transform: 'translateX(-50%)', backgroundImage: 'linear-gradient(to top right, #0284c7, #7dd3fc)', opacity: '0.3', left: 'calc(50% - 30rem)', width: '72.1875rem' }}>
           {/* Content */}
         </div>
       </div>
@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
       
       
       <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-        <div className="relative" style={{ left: 'calc(50% + 3rem)', aspectRatio: '1155/678', width: '36.125rem', transform: 'translateX(-50%)', backgroundImage: 'linear-gradient(to top right, #ff80b5, #9089fc)', opacity: '0.3', left: 'calc(50% + 36rem)', width: '72.1875rem' }}>
+        <div className="relative" style={{ left: 'calc(50% + 3rem)', aspectRatio: '1155/678', width: '36.125rem', transform: 'translateX(-50%)', backgroundImage: 'linear-gradient(to top right, #0284c7, #7dd3fc)', opacity: '0.3', left: 'calc(50% + 36rem)', width: '72.1875rem' }}>
           {/* Content */}
         </div>
       </div>

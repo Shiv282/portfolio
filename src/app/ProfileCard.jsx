@@ -8,55 +8,91 @@ const ProfileCard = () => {
         <div className="image"></div>
         <div className="profile-card">
       <div className="text-data mt-20">
-        <span className="name color-black">CodingLab</span>
-        <span className="job">YouTuber & Blogger</span>
+        <span className="name color-black">Shivaraj C M</span>
+        <div className="job-container bg-white px-5 py-2 rounded-full">
+        <span className="job bg-white rounded-md">Full Stack Developer</span>
+        </div>
+        
       </div>
       <div className="media-buttons">
-        <a href="#" className="link facebook">
-          <i className="bx bxl-facebook"></i>
+        <a href="https://leetcode.com/Shivaraj_C_M/" className="link leetcode">
+        <img
+          src='images/leetcode.svg'
+          alt='sql'
+          style={{
+            width: '35px', 
+            height: '35px', 
+            objectFit: 'contain',
+          }}
+        />
         </a>
-        <a href="#" className="link twitter">
-          <i className="bx bxl-twitter"></i>
+        <a href="https://github.com/Shiv282" className="link github">
+        <img
+          src='images/github.svg'
+          alt='sql'
+          style={{
+            width: '35px', 
+            height: '35px', 
+            objectFit: 'contain',
+          }}
+        />
         </a>
-        <a href="#" className="link instagram">
-          <i className="bx bxl-instagram"></i>
+        <a href="https://twitter.com/ShivarajCM02" className="link twitter">
+        <img
+          src='images/twitter.svg'
+          alt='sql'
+          style={{
+            width: '35px', 
+            height: '35px', 
+            objectFit: 'contain',
+            borderRadius: '50%'
+          }}
+        />
         </a>
-        <a href="#" className="link youtube">
-          <i className="bx bxl-youtube"></i>
+        <a href="https://www.hackerrank.com/profile/shivucm_8055" className="link hackerrank">
+        <img
+          src='images/hackerrank.svg'
+          alt='sql'
+          style={{
+            width: '35px', 
+            height: '35px', 
+            objectFit: 'contain',
+          }}
+        />
         </a>
       </div>
 
     <div>
-      <div class="analytics">
-        <div class="data">
-          <i class="bx bx-heart"></i>
-          <span class="number">Phone</span>
+      <div className="analytics">
+        <div className="data">
+          <i className="bx bx-heart"></i>
+          <span className="number">Phone</span>
         </div>
-        <div class="data">
-          <i class="bx bx-message-rounded"></i>
-          <span class="number">+91 9606631377</span>
-        </div>
-      </div>
-
-      <div class="analytics">
-        <div class="data">
-          <i class="bx bx-heart"></i>
-          <span class="number">Email</span>
-        </div>
-        <div class="data">
-          <i class="bx bx-message-rounded"></i>
-          <span class="number">shivarajcm02@gmail.com</span>
+        <div className="data">
+          <i className="bx bx-message-rounded"></i>
+          <span className="number">+91 9606631377</span>
         </div>
       </div>
 
-      <div class="analytics">
-        <div class="data">
-          <i class="bx bx-heart"></i>
-          <span class="number">Location</span>
+      <div className="analytics">
+        <div className="data">
+          <i className="bx bx-heart"></i>
+          <span className="number">Email</span>
         </div>
-        <div class="data">
-          <i class="bx bx-message-rounded"></i>
-          <span class="number">Bengaluru</span>
+        <div className="data">
+          <i className="bx bx-message-rounded"></i>
+          <span className="number">shivarajcm02@gmail.com</span>
+        </div>
+      </div>
+
+      <div className="analytics">
+        <div className="data">
+          <i className="bx bx-heart"></i>
+          <span className="number">Location</span>
+        </div>
+        <div className="data">
+          <i className="bx bx-message-rounded"></i>
+          <span className="number">Bengaluru</span>
         </div>
       </div>
     </div>
