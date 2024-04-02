@@ -29,11 +29,11 @@ const ProjectCarousel = ({ projects }) => {
   return (
         <div className="flex w-full ml-5">
           <div className="w-1/12 flex flex-row items-center">
-            <KeyboardArrowLeftIcon className="rounded-xl bg-black" onClick={leftClick}/>
+            <KeyboardArrowLeftIcon className="rounded-xl dark:bg-black" onClick={leftClick}/>
           </div>
           <div className="project-card flex-1">
-            <h3 className="text-3xl font-black text-slate-900">{projects[index].title}</h3>
-            <p className="text-3xl font-black text-slate-900">{projects[index].description}</p>
+            <h3 className="text-3xl font-black text-slate-900 dark:text-white">{projects[index].title}</h3>
+            <p className="text-3xl font-black text-slate-900 dark:text-white">{projects[index].description}</p>
             <img
               src={projects[index].imageUrl}
               alt={projects[index].title}
@@ -47,7 +47,7 @@ const ProjectCarousel = ({ projects }) => {
             {/* Add more project details or components as needed */}
           </div>
           <div className="w-1/12 flex flex-row items-center">
-            <KeyboardArrowRightIcon className="rounded-xl bg-black" onClick={rightClick}/>
+            <KeyboardArrowRightIcon className="rounded-xl dark:bg-black" onClick={rightClick}/>
           </div>
         </div>
   );

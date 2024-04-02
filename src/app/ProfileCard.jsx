@@ -6,9 +6,9 @@ const ProfileCard = () => {
   return (
     <div className="container">
         <div className="image"></div>
-        <div className="profile-card">
+        <div className="profile-card dark:bg-zinc-900">
       <div className="text-data mt-20">
-        <span className="name color-black">Shivaraj C M</span>
+        <span className="name color-black dark:text-white">Shivaraj C M</span>
         <div className="job-container bg-white px-5 py-2 rounded-full">
         <span className="job bg-white rounded-md">Full Stack Developer</span>
         </div>
@@ -66,40 +66,40 @@ const ProfileCard = () => {
       <div className="analytics">
         <div className="data">
           <i className="bx bx-heart"></i>
-          <span className="number">Phone</span>
+          <span className="number mr-4 dark:text-white">Phone</span>
         </div>
         <div className="data">
           <i className="bx bx-message-rounded"></i>
-          <span className="number">+91 9606631377</span>
+          <span className="number dark:text-white">+91 9606631377</span>
         </div>
       </div>
 
       <div className="analytics">
         <div className="data">
           <i className="bx bx-heart"></i>
-          <span className="number">Email</span>
+          <span className="number mr-6 dark:text-white">Email</span>
         </div>
         <div className="data">
           <i className="bx bx-message-rounded"></i>
-          <span className="number">shivarajcm02@gmail.com</span>
+          <span className="number dark:text-white">shivarajcm02@gmail.com</span>
         </div>
       </div>
 
       <div className="analytics">
         <div className="data">
           <i className="bx bx-heart"></i>
-          <span className="number">Location</span>
+          <span className="number dark:text-white">Location</span>
         </div>
         <div className="data">
           <i className="bx bx-message-rounded"></i>
-          <span className="number">Bengaluru</span>
+          <span className="number dark:text-white">Bengaluru</span>
         </div>
       </div>
     </div>
 
       <div className="buttons">
-        <button className="button">Resume</button>
-        <button className="button">Message</button>
+        <button className="button dark:bg-sky-400">Resume</button>
+        <button className="button dark:bg-sky-400">Message</button>
       </div>
     </div>
     </div>

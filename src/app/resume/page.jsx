@@ -7,10 +7,10 @@ import TechStackLogos from "./techStack";
 export default function Page() {
   return (
     <>
-      <div className="main-card">
+      <div className="main-card dark:bg-zinc-900">
         
-        <h1 className="text-3xl font-black text-slate-900">Resume</h1>
-      <div className="h-1 bg-blue-500 flex-grow w-3/4 mb-5"></div>
+        <h1 className="text-3xl font-black text-slate-900 dark:text-white">Resume</h1>
+      <div className="h-1 bg-blue-500 flex-grow w-3/4 mb-5 dark:bg-sky-400"></div>
         
         <div className="bg-white rounded-md">
           <div class="card-container my-5 flex flex-row">
@@ -25,7 +25,7 @@ export default function Page() {
                 </h2>
               </div>
 
-              <div className="card flex flex-col mt-3 rounded-lg  bg-zinc-50 px-2 py-2">
+              <div className="card flex flex-col mt-3 rounded-lg  bg-zinc-50 dark:bg-zinc-200 px-2 py-2">
                 <span className="mx-5 text-l font-bold text-slate-900">
                   BE - ISE [2020 - 2024]
                 </span>
@@ -35,7 +35,7 @@ export default function Page() {
                 <span className="mx-5 text-l text-slate-900">CGPA - 8.3</span>
               </div>
 
-              <div className="card flex flex-col mt-3 rounded-lg  bg-zinc-50 px-2 py-2">
+              <div className="card flex flex-col mt-3 rounded-lg  bg-zinc-50 dark:bg-zinc-200 px-2 py-2">
                 <span className="mx-5 text-l font-bold text-slate-900">
                   Pre University Degree [2018 - 2020]
                 </span>
@@ -45,7 +45,7 @@ export default function Page() {
                 <span className="mx-5 text-l text-slate-900">90.5%</span>
               </div>
 
-              <div className="card flex flex-col mt-3 rounded-lg  bg-zinc-50 px-2 py-2">
+              <div className="card flex flex-col mt-3 rounded-lg  bg-zinc-50 dark:bg-zinc-200 px-2 py-2">
                 <span className="mx-5 text-l font-bold text-slate-900">
                   X ICSE [2018]
                 </span>
@@ -66,7 +66,7 @@ export default function Page() {
                   What I do
                 </h3>
               </div>
-              <div className="card mt-3 rounded-lg bg-zinc-50 px-2 py-2">
+              <div className="card mt-3 rounded-lg bg-zinc-50 dark:bg-zinc-200 px-2 py-2">
                 <div className="flex flex-row">
                   <svg
                     stroke="black"
@@ -86,7 +86,7 @@ export default function Page() {
                 </div>
               </div>
 
-              <div className="card my-2 rounded-lg bg-zinc-50 px-2 py-2">
+              <div className="card my-2 rounded-lg bg-zinc-50 dark:bg-zinc-200 px-2 py-2">
                 <div className="flex flex-row">
                   <svg
                     stroke="black"
@@ -105,7 +105,7 @@ export default function Page() {
                 </div>
               </div>
 
-              <div className="card my-2 rounded-lg bg-zinc-50 px-2 py-2">
+              <div className="card my-2 rounded-lg bg-zinc-50 dark:bg-zinc-200 px-2 py-2">
                 <div className="flex flex-row">
                   <svg
                     stroke="black"

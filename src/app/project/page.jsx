@@ -29,9 +29,9 @@ export default function Page() {
 
 
   return (
-    <div className='main-card'>
-      <h1 className="text-3xl font-black text-slate-900">Projects</h1>
-      <div className="h-1 bg-blue-500 flex-grow w-3/4 mb-10"></div>
+    <div className='main-card dark:bg-zinc-900'>
+      <h1 className="text-3xl font-black text-slate-900 dark:text-white">Projects</h1>
+      <div className="h-1 bg-blue-500 flex-grow w-3/4 mb-10 dark:bg-sky-400"></div>
       <ProjectCarousel projects={projects}/>
     </div>
   );

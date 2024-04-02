@@ -4,11 +4,11 @@ import WorkIcon from '@mui/icons-material/Work';
 export default function Page() {
   return (
     <>
-      <div className="main-card">
+      <div className="main-card dark:bg-zinc-900">
         <div>
-        <h1 className="text-3xl font-black text-slate-900">About</h1>
-      <div className="h-1 bg-blue-500 flex-grow w-3/4 mb-10"></div>
-          <p className="text-slate-900 mt-2 mb-5">
+        <h1 className="text-3xl font-black text-slate-900 dark:text-white">About</h1>
+      <div className="h-1 bg-blue-500 flex-grow w-3/4 mb-5 dark:bg-sky-400 "></div>
+          <p className="text-slate-900 mt-2 mb-5 dark:text-white">
             As a graduating student passionate about technology, I am eager to
             leverage my skills and enthusiasm to collaborate with
             forward-thinking teams. I am seeking opportunities to contribute
