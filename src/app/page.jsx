@@ -23,9 +23,9 @@ export default function Page() {
             <div className="flex flex-row">
                 <WorkIcon
                   className="text-3xl"
-                  style={{ fontSize: "32px", stroke: "black", strokeWidth: "2px"}}
+                  style={{ fontSize: "32px"}}
                 />
-                <h3 className=" mx-3 text-2xl font-black text-slate-900">
+                <h3 className="mx-3 text-2xl font-black text-slate-900 dark:text-white">
                   Experience
                 </h3>
               </div>

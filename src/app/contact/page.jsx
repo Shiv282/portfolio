@@ -11,7 +11,7 @@ export default function Page() {
       <h1 className="text-xl font-bold text-slate-900">
          Hey there,
         </h1>
-        <h1 className="text-l font-bold text-slate-900 mb-10">
+        <h1 className="text-l mt-2 font-bold text-slate-900 mb-7">
         Let's chat about potential freelancing gigs, projects, or anything else where I can lend a hand. Drop me a line via the links provided or fill out the form below. Excited to connect!
         </h1>
         <TextField
