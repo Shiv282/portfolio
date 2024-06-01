@@ -2,28 +2,36 @@
 import React from 'react';
 import ProjectCarousel from './carousel';
 
+
 export default function Page() {
   const projects = [
     {
-      title: "Project 1",
-      description: "Description of Project 1",
-      imageUrl: "images/sql.png",
+      title: "Mastro Workforce",
+      description: ["Developed a full-stack web application using with Node.js serving a REST API with Next.js as the frontend",
+        "Implemented NFC writer and NFC reader for patrolling services",
+        "Provided HCM features like Payroll Management, Attendance Management and Work tracking","Provided different level of access based on user role"],
+      imageUrl1: "project_images/MaestroWorkForce.png",
+      imageUrl2: "project_images/MastroWorkForce_2.png",
+      imageUrl3: "project_images/MastroWorkForce_3.png",
     },
     {
-      title: "Project 2",
-      description: "Description of Project 2",
-      imageUrl: "images/sql.png",
+      title: "Career Predictor",
+      description: ["Developed an online streamlined career predictor/guidance system with client- server architecture",
+        "Used flask framework and trained 2 ML models  to predict the career options based on skill sets and learning styles",
+        "Used Reactjs to design the ui/ux for tests and charts/graphs for results"],
+        imageUrl1: "project_images/CareerPrediction.png",
+        imageUrl2: "project_images/CareerPrediction_3.png",
+        imageUrl3: "project_images/CareerPrediction_2.png",
     },
     {
-      title: "Project 3",
-      description: "Description of Project 3",
-      imageUrl: "images/sql.png",
+      title: "TaskManager Extension",
+      description: ["Developed a Java Spring boot backend with rest controllers for handling http requests and storing the data in MongoDB following MVC Architecture",
+        "Testing end user’s logical reasoning, technical skills and learning style using different AI models",
+        ""],
+        imageUrl1: "project_images/TaskManager.png",
+        imageUrl2: "project_images/TaskManager_2.png",
+        imageUrl3: "project_images/TaskManager_3.png",
     },
-    {
-      title: "Project 4",
-      description: "Description of Project 4",
-      imageUrl: "images/sql.png",
-    }
     // Add more projects as needed
   ];
 

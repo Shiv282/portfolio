@@ -1,7 +1,9 @@
+"use client"
 import { Inter } from "next/font/google";
 import "./globals.css";
 import ProfileCard from './ProfileCard';
 import NavBar from "./navbar";
+import { useEffect } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,10 +13,12 @@ export default function RootLayout({ children }) {
       "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
   };
 
+  
+
   return (
     <html lang="en">
       
-      <body>
+      <body className="min-h-screen">
         <div id="main">
         <div className="relative isolate px-6 lg:px-8">
       <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
@@ -23,9 +27,9 @@ export default function RootLayout({ children }) {
         </div>
       </div>
 
-      <div className="flex-container">
-      <ProfileCard/>
-      <div className="side-card">
+      <div className="lg:flex  lg:justiify-between w-full">
+      <ProfileCard className="lg:w-1/4"/>
+      <div id="top" className="lg:w-3/4 lg:max-w-full md:max-w-[780px] md:pt-20 pt-10">
       <NavBar />
       <main>{children}</main>
       </div>

@@ -8,17 +8,22 @@ export default function Page() {
   return (
     <>
       <div className="main-card dark:bg-zinc-900">
-        
-        <h1 className="text-3xl font-black text-slate-900 dark:text-white">Resume</h1>
-      <div className="h-1 bg-blue-500 flex-grow w-3/4 mb-5 dark:bg-sky-400"></div>
-        
-        <div className="bg-white rounded-md">
-          <div class="card-container my-5 flex flex-row">
-            <div className="education mx-5 w-full">
+        <h1 className="text-3xl font-black text-slate-900 dark:text-white">
+          Resume
+        </h1>
+        <div className="h-1 bg-blue-500 flex-grow w-3/4 mb-5 dark:bg-sky-400"></div>
+
+        <div className="bg-white rounded-md md:w-full">
+          <div class="card-container my-5 md:my-2 md:flex md:flex-row">
+            <div className="education my-5 mx-5 md:w-full">
               <div className="flex flex-row">
                 <SchoolIcon
                   className="text-3xl"
-                  style={{ fontSize: "32px", stroke: "black", strokeWidth: "2px" }}
+                  style={{
+                    fontSize: "32px",
+                    stroke: "black",
+                    strokeWidth: "2px",
+                  }}
                 />
                 <h2 className=" mx-3 text-2xl font-black text-slate-900">
                   Education
@@ -56,11 +61,15 @@ export default function Page() {
               </div>
             </div>
 
-            <div className="experience mx-5 w-full">
+            <div className="experience mx-5 my-5 md:my-2 md:w-full">
               <div className="flex flex-row">
                 <TaskAltIcon
                   className="text-3xl"
-                  style={{ fontSize: "32px", stroke: "black", strokeWidth: "2px" }}
+                  style={{
+                    fontSize: "32px",
+                    stroke: "black",
+                    strokeWidth: "2px",
+                  }}
                 />
                 <h3 className=" mx-3 text-2xl font-black  text-slate-900">
                   What I do
@@ -132,10 +141,14 @@ export default function Page() {
                 <div className="flex flex-row">
                   <ComputerIcon
                     className="text-3xl"
-                    style={{ fontSize: "32px", stroke: "black", strokeWidth: "2px" }}
+                    style={{
+                      fontSize: "32px",
+                      stroke: "black",
+                      strokeWidth: "2px",
+                    }}
                   />
                   <h3 className=" mx-3 text-2xl font-black text-slate-900">
-                    Worked on 
+                    Worked on
                   </h3>
                 </div>
                 <div className="bg-zinc-900 rounded-lg py-3 mt-5">

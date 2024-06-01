@@ -3,9 +3,18 @@ import React from "react";
 import "./globals.css";
 
 const ProfileCard = () => {
+  const email = 'shivarajcm02@gmail.com';
+  const subject = 'Contact Request';
+  const body = 'Hi, I would like to get in touch with you regarding ';
+
+  const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const gmailLink = `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
   return (
     <div className="container">
-        <div className="image"></div>
+        <div className="image bg-black w-48 h-48 rounded-full border border-white border-4 overflow-hidden flex justify-center items-center">
+          <img src="temp.jpeg" alt="profile_icon" className="w-4/5 h-4/5 object-cover rounded-full"/>
+        </div>
         <div className="profile-card dark:bg-zinc-900">
       <div className="text-data mt-20">
         <span className="name color-black dark:text-white">Shivaraj C M</span>
@@ -98,8 +107,8 @@ const ProfileCard = () => {
     </div>
 
       <div className="buttons">
-        <button className="button dark:bg-sky-400">Resume</button>
-        <button className="button dark:bg-sky-400">Message</button>
+        <a href="Shivaraj_C_M_Resume.pdf" className="button dark:bg-sky-400" target="_blank">Resume</a>
+        <a href={gmailLink} className="button dark:bg-sky-400" target="_blank">Message</a>
       </div>
     </div>
     </div>

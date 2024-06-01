@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -32,10 +28,7 @@ body {
   }
 }
 
-html, body, #main {
-  height: 100vmax;
-  width: 100vw;
-}
+
 
 .profile-card {
   display: flex;
@@ -70,7 +63,6 @@ html, body, #main {
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-color: #4070f4;
   padding: 3px;
   margin-bottom: 10px;
 }
@@ -154,10 +146,7 @@ html, body, #main {
   border-right: none;
 }
 
-.flex-container {
-  display: flex;
-  justify-content: space-between; /* Adjust as needed */
-}
+
 
 .main-card {
   display: flex;
@@ -172,8 +161,8 @@ html, body, #main {
   position: relative;
 }
 
-.side-card {
-  width: 60rem;
-  padding-top: 5rem;
-}
 
+
+@media (max-width: 768px) {
+
+}
