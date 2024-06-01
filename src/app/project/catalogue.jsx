@@ -7,7 +7,7 @@ const Catalogue = ({ mainImage, leftImage, rightImage }) => {
       <img
         src={leftImage}
         alt="Left Image"
-        className="absolute left-0 h-48 w-48 object-contain transform -translate-x-2/3"
+        className="absolute left-0 h-48 w-48 object-contain transform md:-translate-x-2/3 -translate-x-1/4"
       />
       <img
         src={mainImage}
@@ -17,7 +17,7 @@ const Catalogue = ({ mainImage, leftImage, rightImage }) => {
       <img
         src={rightImage}
         alt="Right Image"
-        className="absolute right-0 h-48 w-48 object-contain transform translate-x-2/3"
+        className="absolute right-0 h-48 w-48 object-contain transform md:translate-x-2/3 translate-x-1/4"
       />
     </div>
   );

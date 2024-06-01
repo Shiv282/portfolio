@@ -45,7 +45,7 @@ const TechStackLogos = () => {
           }}
         />
         <img
-          src='images/c.png'
+          src='images/C_new.png'
           alt='c'
           className='w-[50px] h-[50px] md:w-[100px] md:h-[100px]'
           style={{

@@ -28,7 +28,7 @@ const ProjectCarousel = ({ projects }) => {
   }
 
   return (
-    <div className="flex w-full ml-5">
+    <div className="flex md:w-full ml-5">
       <div className="w-1/12 flex flex-row items-center justify-center">
         <KeyboardArrowLeftIcon
           className="rounded-xl dark:bg-black"
