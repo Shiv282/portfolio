@@ -10,9 +10,9 @@ const ProfileCard = () => {
 
     // Check if window is available (client-side rendering)
     if (typeof window !== 'undefined') {
-
+      window._wfx_test = true;
       // Define getCookie function
-      const getCookie = (cookieName) => {
+      window.getCookie = (cookieName) => {
         const name = cookieName + "=";
         const decodedCookie = decodeURIComponent(document.cookie);
         const cookieArray = decodedCookie.split(';');
@@ -26,7 +26,7 @@ const ProfileCard = () => {
       };
 
       // Define setCookie function
-      const setCookie = (name, value, days) => {
+      window.setCookie = (name, value, days) => {
         const expiresDate = new Date(Date.now() + (days * 24 * 60 * 60 * 1000));
         const expiresString = expiresDate.toUTCString();
         const cookieString = `${name}=${value}; expires=${expiresString}; SameSite=None; Secure`;
@@ -35,7 +35,7 @@ const ProfileCard = () => {
       };
 
       // Define removeCookie function
-      const removeCookie = (name) => {
+      window.removeCookie = (name) => {
         const expiresString = "Thu, 01 Jan 1970 00:00:00 UTC";
         const cookieString = `${name}=; expires=${expiresString}; SameSite=None; Secure`;
         document.cookie = cookieString;
