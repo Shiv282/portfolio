@@ -19,7 +19,7 @@ const ProfileCard = () => {
       <div className="text-data mt-20">
         <span className="name color-black dark:text-white">Shivaraj C M</span>
         <div className="job-container bg-white px-5 py-2 rounded-full">
-        <span className="job bg-white rounded-md">Full Stack Developer</span>
+        <span className="job bg-white rounded-md">Solutions Engineer</span>
         </div>
         
       </div>
