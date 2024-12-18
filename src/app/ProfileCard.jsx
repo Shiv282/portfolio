@@ -50,6 +50,11 @@ const ProfileCard = () => {
         console.log('Iframe Window : wfx_iframe_loaded');
       });
 
+      window.top.postMessage({
+          action: 'wfx_iframe_loaded'
+        }, '*');
+        console.log('Iframe Window : wfx_iframe_loaded');
+
       // Event listener for 'message' from parent window
       window.addEventListener('message', function (event) {
         const data = event.data;
