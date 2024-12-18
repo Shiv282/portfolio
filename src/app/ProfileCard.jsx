@@ -1,8 +1,84 @@
 // ProfileCard.js
 import React from "react";
 import "./globals.css";
+import { useEffect } from 'react';
 
 const ProfileCard = () => {
+
+  useEffect(() => {
+    // This code will run on the client side after the component mounts
+
+    // Check if window is available (client-side rendering)
+    if (typeof window !== 'undefined') {
+
+      // Define getCookie function
+      const getCookie = (cookieName) => {
+        const name = cookieName + "=";
+        const decodedCookie = decodeURIComponent(document.cookie);
+        const cookieArray = decodedCookie.split(';');
+        for (let i = 0; i < cookieArray.length; i++) {
+          let cookie = cookieArray[i].trim();
+          if (cookie.indexOf(name) === 0) {
+            return cookie.substring(name.length);
+          }
+        }
+        return null;
+      };
+
+      // Define setCookie function
+      const setCookie = (name, value, days) => {
+        const expiresDate = new Date(Date.now() + (days * 24 * 60 * 60 * 1000));
+        const expiresString = expiresDate.toUTCString();
+        const cookieString = `${name}=${value}; expires=${expiresString}; SameSite=None; Secure`;
+        document.cookie = cookieString;
+        console.log(`Iframe Window : Cookie Added -> ${cookieString}`);
+      };
+
+      // Define removeCookie function
+      const removeCookie = (name) => {
+        const expiresString = "Thu, 01 Jan 1970 00:00:00 UTC";
+        const cookieString = `${name}=; expires=${expiresString}; SameSite=None; Secure`;
+        document.cookie = cookieString;
+        console.log(`Iframe Window : Cookie Removed`);
+      };
+
+      // Event listener for 'DOMContentLoaded'
+      window.addEventListener('DOMContentLoaded', function () {
+        window.top.postMessage({
+          action: 'wfx_iframe_loaded'
+        }, '*');
+        console.log('Iframe Window : wfx_iframe_loaded');
+      });
+
+      // Event listener for 'message' from parent window
+      window.addEventListener('message', function (event) {
+        const data = event.data;
+        
+        if (data.action === 'setWfxCookie') {
+          setCookie(data.name, data.value, 7);
+        }
+        else if (data.action === 'removeWfxCookie') {
+          removeCookie(data.name);
+        }
+        else if (data.action === 'check_flow_status') {
+          const myCookieValue = getCookie("wfx_playState");
+          if (myCookieValue) {
+            window.top.postMessage({
+              action: 'flow_live',
+              meta: myCookieValue
+            }, '*');
+            console.log(`Iframe Window : Flow Active -> Cookie fetched -> ${myCookieValue}`);
+          } else {
+            console.log(`Iframe Window : Flow Inactive -> Cookie not found -> ${myCookieValue}`);
+          }
+        }
+      });
+    }
+
+  }, []); // Empty dependency array to ensure this runs only once after the component is mounted
+
+
+
   const email = 'shivarajcm02@gmail.com';
   const subject = 'Contact Request';
   const body = 'Hi, I would like to get in touch with you regarding ';
